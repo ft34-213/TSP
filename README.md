@@ -1,12 +1,45 @@
-# React + Vite
+Features
+1.Visits all 28 state capitals exactly once
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2.Calculates and returns to the starting city
 
-Currently, two official plugins are available:
+Shows:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Ordered list of cities visited
 
-## Expanding the ESLint configuration
+ Total distance (km)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Total cost (₹1 per km)
+
+🔧 Prerequisites
+
+Node.js & npm installed
+
+Vite globally (optional)
+
+Backend Setup (Express)
+bash
+Copy
+Edit
+cd tsp-india-tour/server
+npm init -y
+npm install express cors
+node index.js
+✅ Server will run at: http://localhost:5000
+
+Frontend Setup (React + Vite)
+bash
+Copy
+Edit
+cd tsp-india-tour/client
+npm create vite@latest . -- --template react
+npm install
+npm install axios
+🔁 Replace the src/App.jsx and src/App.css with the provided files.
+
+bash
+Copy
+Edit
+npm run dev
+✅ App will run at: http://localhost:5173
+
